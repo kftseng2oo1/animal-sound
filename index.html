@@ -669,7 +669,93 @@ function sfxNext() {
   } catch(e){}
 }
 
-// ── TTS ───────────────────────────────────────────────────────────
+// ── Freesound API + TTS fallback ─────────────────────────────────
+var FS_TOKEN = 'f2vSMzeHQJr6ylMjzs3x4qIpQOaRI6GLBZ1AXGvq';
+
+// Search keywords per animal svg key (language-independent)
+var FS_QUERY = {
+  duck:     'duck quack',
+  cat:      'cat meow',
+  dog:      'dog bark',
+  chick:    'chick chirp',
+  cow:      'cow moo',
+  lion:     'lion roar',
+  elephant: 'elephant trumpet'
+};
+
+// In-memory cache: svg key → preview mp3 URL
+var fsCache = {};
+// Currently playing Audio object
+var currentAudio = null;
+
+// Preload Freesound URL for next animal (called after loadAnimal)
+function prefetchSound(svgKey) {
+  if (fsCache[svgKey]) return; // already cached
+  fsCache[svgKey] = 'loading';
+  var q = encodeURIComponent(FS_QUERY[svgKey] || svgKey);
+  var url = 'https://freesound.org/apiv2/search/text/'
+    + '?query=' + q
+    + '&fields=id,name,previews,duration'
+    + '&filter=duration:[0.5+TO+6]'
+    + '&page_size=5'
+    + '&token=' + FS_TOKEN;
+  fetch(url)
+    .then(function(r){ return r.json(); })
+    .then(function(data){
+      var results = data.results || [];
+      if (results.length > 0) {
+        // Pick a random result among top 5 for variety
+        var pick = results[Math.floor(Math.random() * results.length)];
+        var mp3  = pick.previews['preview-hq-mp3'] || pick.previews['preview-lq-mp3'] || '';
+        fsCache[svgKey] = mp3 || 'tts';
+        console.log('Freesound cached:', svgKey, '->', pick.name);
+      } else {
+        fsCache[svgKey] = 'tts'; // no results → fallback
+      }
+    })
+    .catch(function(){
+      fsCache[svgKey] = 'tts'; // network error → fallback
+    });
+}
+
+function playAnimalSound(animal) {
+  var svgKey = animal.svg;
+  var cached = fsCache[svgKey];
+
+  // Stop any currently playing audio
+  if (currentAudio) {
+    currentAudio.pause();
+    currentAudio.currentTime = 0;
+    currentAudio = null;
+  }
+
+  if (cached && cached !== 'loading' && cached !== 'tts') {
+    // ✅ Freesound MP3 available — play it
+    var audio = new Audio(cached);
+    audio.volume = 1;
+    currentAudio = audio;
+    audio.play().catch(function(){
+      // Autoplay blocked → fallback to TTS
+      speakAnimal(animal);
+    });
+  } else {
+    // 🔄 Fallback: TTS (cache loading or failed)
+    speakAnimal(animal);
+    // If still loading, retry after 2s with Freesound
+    if (cached === 'loading') {
+      setTimeout(function(){
+        if (fsCache[svgKey] && fsCache[svgKey] !== 'loading' && fsCache[svgKey] !== 'tts') {
+          if (currentAudio) return; // already playing something
+          var audio = new Audio(fsCache[svgKey]);
+          currentAudio = audio;
+          audio.play().catch(function(){});
+        }
+      }, 2000);
+    }
+  }
+}
+
+// ── TTS (fallback) ────────────────────────────────────────────────
 if (window.speechSynthesis) {
   window.speechSynthesis.onvoiceschanged = function(){ window.speechSynthesis.getVoices(); };
   window.speechSynthesis.getVoices();
@@ -711,6 +797,11 @@ function shuffle(arr) {
 
 function selectLang(lang) {
   curLang = lang;
+  // Stop any playing audio
+  if (currentAudio) { currentAudio.pause(); currentAudio = null; }
+  if (window.speechSynthesis) window.speechSynthesis.cancel();
+  // Clear cache so new game gets fresh random Freesound picks
+  fsCache = {};
   var d   = DATA[lang];
   var scr = document.getElementById('langScreen');
   scr.classList.add('hide');
@@ -763,6 +854,9 @@ function loadAnimal() {
   document.getElementById('wave').style.display = 'none';
   document.getElementById('nextBtn').className = 'next-btn';
   transitioning = false;
+
+  // Prefetch Freesound URL in background while user reads the question
+  prefetchSound(a.svg);
 }
 
 document.getElementById('animalBox').addEventListener('click', handlePress);
@@ -777,7 +871,7 @@ function handlePress() {
 
   var a = sequence[curIdx];
   sfxPop();
-  speakAnimal(a);
+  playAnimalSound(a); // Freesound MP3 → TTS fallback
 
   document.getElementById('soundBubble').textContent = a.s;
   document.getElementById('soundBubble').classList.add('show');
@@ -831,7 +925,9 @@ function showResult() {
 
 function restartGame() {
   document.getElementById('resultOverlay').classList.remove('show');
+  if (currentAudio) { currentAudio.pause(); currentAudio = null; }
   if (window.speechSynthesis) window.speechSynthesis.cancel();
+  fsCache = {}; // fresh random picks on each game
   sequence = shuffle(DATA[curLang].animals);
   curIdx=0; answered=false; transitioning=false;
   initStars();
