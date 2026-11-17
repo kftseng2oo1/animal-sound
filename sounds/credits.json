@@ -1,0 +1,352 @@
+{
+ "sheep": [
+  {
+   "file": "sheep_1.mp3",
+   "id": 710297,
+   "name": "Sheep baaing 2 - Norwegian sheep expressing itself concisely to her lamb",
+   "author": "michaelperfect",
+   "url": "https://freesound.org/people/michaelperfect/sounds/710297/",
+   "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+   "duration": 3.00142
+  },
+  {
+   "file": "sheep_2.mp3",
+   "id": 677221,
+   "name": "Ewe baa",
+   "author": "satoristudios3",
+   "url": "https://freesound.org/people/satoristudios3/sounds/677221/",
+   "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+   "duration": 1.33298
+  },
+  {
+   "file": "sheep_3.mp3",
+   "id": 691476,
+   "name": "goat2.mp3",
+   "author": "saha213131",
+   "url": "https://freesound.org/people/saha213131/sounds/691476/",
+   "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+   "duration": 0.783175
+  }
+ ],
+ "hen": [
+  {
+   "file": "hen_1.mp3",
+   "id": 607245,
+   "name": "Chicken",
+   "author": "D4XX",
+   "url": "https://freesound.org/people/D4XX/sounds/607245/",
+   "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+   "duration": 1.92
+  },
+  {
+   "file": "hen_2.mp3",
+   "id": 316920,
+   "name": "Chicken Single Alarm Call",
+   "author": "Rudmer_Rotteveel",
+   "url": "https://freesound.org/people/Rudmer_Rotteveel/sounds/316920/",
+   "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+   "duration": 1.15707
+  },
+  {
+   "file": "hen_3.mp3",
+   "id": 827114,
+   "name": "Fowl - Turkey; Hen Clucks, Somewhat Raspy, Other Birds in Background",
+   "author": "TheKingOfGeeks360",
+   "url": "https://freesound.org/people/TheKingOfGeeks360/sounds/827114/",
+   "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+   "duration": 3.31
+  }
+ ],
+ "chick": [
+  {
+   "file": "chick_1.mp3",
+   "id": 519193,
+   "name": "Baby Chicks Chirp.boaay",
+   "author": "BOAAY",
+   "url": "https://freesound.org/people/BOAAY/sounds/519193/",
+   "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+   "duration": 1.7619
+  },
+  {
+   "file": "chick_2.mp3",
+   "id": 479585,
+   "name": "R01-10-Birds Chirping Quickly.wav",
+   "author": "craigsmith",
+   "url": "https://freesound.org/people/craigsmith/sounds/479585/",
+   "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+   "duration": 2.41637
+  }
+ ],
+ "duck": [
+  {
+   "file": "duck_1.mp3",
+   "id": 581151,
+   "name": "Goose And Duck.aiff",
+   "author": "ChunaawChika09",
+   "url": "https://freesound.org/people/ChunaawChika09/sounds/581151/",
+   "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+   "duration": 2.00444
+  },
+  {
+   "file": "duck_2.mp3",
+   "id": 719113,
+   "name": "Duck Quacking Quietly Twice",
+   "author": "OwennewO",
+   "url": "https://freesound.org/people/OwennewO/sounds/719113/",
+   "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+   "duration": 0.454708
+  },
+  {
+   "file": "duck_3.mp3",
+   "id": 517792,
+   "name": "FEMALE DUCK - 1",
+   "author": "SamuelGremaud",
+   "url": "https://freesound.org/people/SamuelGremaud/sounds/517792/",
+   "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+   "duration": 2.56335
+  }
+ ],
+ "goose": [
+  {
+   "file": "goose_1.mp3",
+   "id": 581151,
+   "name": "Goose And Duck.aiff",
+   "author": "ChunaawChika09",
+   "url": "https://freesound.org/people/ChunaawChika09/sounds/581151/",
+   "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+   "duration": 2.00444
+  },
+  {
+   "file": "goose_2.mp3",
+   "id": 510939,
+   "name": "Bird Honk - 2.wav",
+   "author": "SpaceJoe",
+   "url": "https://freesound.org/people/SpaceJoe/sounds/510939/",
+   "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+   "duration": 0.835918
+  },
+  {
+   "file": "goose_3.mp3",
+   "id": 740197,
+   "name": "Goose Trumpet (loud honk) - Best Capture",
+   "author": "el_boss",
+   "url": "https://freesound.org/people/el_boss/sounds/740197/",
+   "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+   "duration": 0.535193
+  }
+ ],
+ "cow": [
+  {
+   "file": "cow_1.mp3",
+   "id": 691476,
+   "name": "goat2.mp3",
+   "author": "saha213131",
+   "url": "https://freesound.org/people/saha213131/sounds/691476/",
+   "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+   "duration": 0.783175
+  },
+  {
+   "file": "cow_2.mp3",
+   "id": 847404,
+   "name": "Bovines - Cattle; Cow Mooing, Take 3",
+   "author": "TheKingOfGeeks360",
+   "url": "https://freesound.org/people/TheKingOfGeeks360/sounds/847404/",
+   "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+   "duration": 1.30402
+  },
+  {
+   "file": "cow_3.mp3",
+   "id": 513557,
+   "name": "Cow moo #3",
+   "author": "spurioustransients",
+   "url": "https://freesound.org/people/spurioustransients/sounds/513557/",
+   "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+   "duration": 2.62385
+  }
+ ],
+ "cowbell": [
+  {
+   "file": "cowbell_1.mp3",
+   "id": 159764,
+   "name": "Cowbell_rattle_1.aif",
+   "author": "timgormly",
+   "url": "https://freesound.org/people/timgormly/sounds/159764/",
+   "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+   "duration": 0.717187
+  },
+  {
+   "file": "cowbell_2.mp3",
+   "id": 350704,
+   "name": "Cowbell - Multi 02.wav",
+   "author": "RP1312",
+   "url": "https://freesound.org/people/RP1312/sounds/350704/",
+   "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+   "duration": 3.04471
+  },
+  {
+   "file": "cowbell_3.mp3",
+   "id": 488218,
+   "name": "beLL_EmErging_01.wav",
+   "author": "fieldofsky",
+   "url": "https://freesound.org/people/fieldofsky/sounds/488218/",
+   "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+   "duration": 2.2
+  }
+ ],
+ "cat": [
+  {
+   "file": "cat_1.mp3",
+   "id": 262306,
+   "name": "Cat_Twit1.wav",
+   "author": "steffcaffrey",
+   "url": "https://freesound.org/people/steffcaffrey/sounds/262306/",
+   "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+   "duration": 0.547392
+  },
+  {
+   "file": "cat_2.mp3",
+   "id": 476484,
+   "name": "Cat 2",
+   "author": "DiegoAngelGaming",
+   "url": "https://freesound.org/people/DiegoAngelGaming/sounds/476484/",
+   "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+   "duration": 1.26549
+  },
+  {
+   "file": "cat_3.mp3",
+   "id": 817884,
+   "name": "Cat Meow #1",
+   "author": "huw2k8",
+   "url": "https://freesound.org/people/huw2k8/sounds/817884/",
+   "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+   "duration": 0.394739
+  }
+ ],
+ "purr": [
+  {
+   "file": "purr_1.mp3",
+   "id": 262306,
+   "name": "Cat_Twit1.wav",
+   "author": "steffcaffrey",
+   "url": "https://freesound.org/people/steffcaffrey/sounds/262306/",
+   "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+   "duration": 0.547392
+  },
+  {
+   "file": "purr_2.mp3",
+   "id": 262307,
+   "name": "Cat Happy Purr/Twitter2.wav",
+   "author": "steffcaffrey",
+   "url": "https://freesound.org/people/steffcaffrey/sounds/262307/",
+   "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+   "duration": 0.53542
+  },
+  {
+   "file": "purr_3.mp3",
+   "id": 262311,
+   "name": "Cat Purr/Twit6.wav",
+   "author": "steffcaffrey",
+   "url": "https://freesound.org/people/steffcaffrey/sounds/262311/",
+   "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+   "duration": 0.418753
+  }
+ ],
+ "dog": [
+  {
+   "file": "dog_1.mp3",
+   "id": 396307,
+   "name": "Dog play.WAV",
+   "author": "cribbler",
+   "url": "https://freesound.org/people/cribbler/sounds/396307/",
+   "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+   "duration": 2.54663
+  },
+  {
+   "file": "dog_2.mp3",
+   "id": 535457,
+   "name": "Single bark of a dog",
+   "author": "exe2be",
+   "url": "https://freesound.org/people/exe2be/sounds/535457/",
+   "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+   "duration": 0.450083
+  },
+  {
+   "file": "dog_3.mp3",
+   "id": 827435,
+   "name": "Dog Jumps Off Tree On Grass",
+   "author": "qubodup",
+   "url": "https://freesound.org/people/qubodup/sounds/827435/",
+   "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+   "duration": 1.24814
+  }
+ ],
+ "pig": [
+  {
+   "file": "pig_1.mp3",
+   "id": 233177,
+   "name": "Pig - Grunt and Squeal 4 - 96kHz.wav",
+   "author": "JarredGibb",
+   "url": "https://freesound.org/people/JarredGibb/sounds/233177/",
+   "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+   "duration": 1.1833
+  },
+  {
+   "file": "pig_2.mp3",
+   "id": 842313,
+   "name": "Swine - Pig; Dinosaur-like Grunt",
+   "author": "TheKingOfGeeks360",
+   "url": "https://freesound.org/people/TheKingOfGeeks360/sounds/842313/",
+   "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+   "duration": 1.6651
+  },
+  {
+   "file": "pig_3.mp3",
+   "id": 510974,
+   "name": "oink.wav",
+   "author": "krzpia",
+   "url": "https://freesound.org/people/krzpia/sounds/510974/",
+   "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+   "duration": 1.27812
+  }
+ ],
+ "piglet": [
+  {
+   "file": "piglet_1.mp3",
+   "id": 618483,
+   "name": "Piglet_Squeal_01.flac",
+   "author": "wwstudioswastaken",
+   "url": "https://freesound.org/people/wwstudioswastaken/sounds/618483/",
+   "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+   "duration": 1.42928
+  }
+ ],
+ "rooster": [
+  {
+   "file": "rooster_1.mp3",
+   "id": 719773,
+   "name": "Morning rooster crow",
+   "author": "JoMungus",
+   "url": "https://freesound.org/people/JoMungus/sounds/719773/",
+   "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+   "duration": 2.26601
+  },
+  {
+   "file": "rooster_2.mp3",
+   "id": 165876,
+   "name": "Quiquiriquí",
+   "author": "cocoricosound",
+   "url": "https://freesound.org/people/cocoricosound/sounds/165876/",
+   "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+   "duration": 2.33446
+  },
+  {
+   "file": "rooster_3.mp3",
+   "id": 435506,
+   "name": "Rooster Crow 3",
+   "author": "BenjaminNelan",
+   "url": "https://freesound.org/people/BenjaminNelan/sounds/435506/",
+   "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+   "duration": 2.15712
+  }
+ ]
+}
